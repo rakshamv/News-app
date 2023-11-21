@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Application</title>
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+
+<body>
+
+    <header>
+        <img src="https://img.freepik.com/premium-vector/badge-news-logo-modern-flat-pictogram-business-marketing-internet-concept-symbol-website-design-buttons-mobile-app-news-vector-icon-globe-symbol-world_340607-38.jpg?w=2000" width="50px" height="50px">
+        <h5>NEWS APP</h5>
+
+        <img src="" width="120px" />
+
+
+        <nav class="desktop">
+            <ul class="lu">
+
+                <li><i class="ri-home-3-fill"></i><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li onclick="Search('sports')">Sports</li>
+                <li onclick="Search('education')">Education</li>
+                <li onclick="Search('business')">Business</li>
+                <li onclick="Search('entertainment')">Entertainment</li>
+
+            </ul>
+        </nav>
+        <div class="menuBtn">
+            <i class="fa-solid fa-bars ham-icon"></i></div>
+        <div class="inputSearch desktop">
+            <form id="searchForm">
+                <input type="text" placeholder="Type to search..." id="searchInput" />
+            </form>
+
+
+            <div class="menuBtn" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars ham-icon"></i>
+
+                <div class="mobile" id="menu-box">
+                    <nav>
+                        <ul>
+                            <li onclick="Search('sports')">Sports</li>
+                            <li onclick="Search('education')">Education</li>
+                            <li onclick="Search('business')">Business</li>
+                            <li onclick="Search('entertainment')">Entertainment</li>
+                        </ul>
+                    </nav>
+                    <div class="inputSearch">
+                        <form id="searchFormMobile" id="searchInputMobile">
+                            <input type="text" placeholder="Type to search..." id="searchInput" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <main>
+
+        <div class="card">
+            <img src="" />
+            <h4>"Max Launches New Live Sports Streaming Tier"</h4>
+            <div class="publishbydate">
+                <p>BCC News</p>
+                <spa>•</spa>
+                <p>15-7-209</p>
+            </div>
+
+            <div class="desc">
+                "As of this past weekend, the live-streaming sports selection on Max is a lot more robust—just in time for the MLB post-season and the NBA pre-season, and also good news for hockey and soccer fans, too. Read more..."
+            </div>
+        </div>
+
+    </main>
+
+    <script src="news.js">
+    </script>
+
+</body>
+
+<footer>
+    <a href="con.html">CONTACT US</a>
+</footer>
+
+
+</html>
